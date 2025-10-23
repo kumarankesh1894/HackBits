@@ -24,27 +24,20 @@ const ProblemStatements = () => {
     "AI & Machine Learning": [
       "AI-Powered Learning Management System",
       "Mental Health Support Chatbot",
+      "lad chatti",
     ],
-    "Blockchain & Web3": [
-      "Blockchain-based Certificate Verification",
-    ],
+    "Blockchain & Web3": ["Blockchain-based Certificate Verification"],
     "IoT & Hardware": [
       "IoT-based Smart Agriculture Solution",
       "Smart Campus Navigation App",
     ],
-    "AR/VR & Gaming": [
-      "AR/VR Educational Content Platform",
-    ],
+    "AR/VR & Gaming": ["AR/VR Educational Content Platform"],
     "Healthcare & Social Impact": [
       "Digital Healthcare Management System",
       "Social Impact Measurement Tool",
     ],
-    "Sustainability & Environment": [
-      "Sustainable Energy Monitoring Platform",
-    ],
-    "Cybersecurity": [
-      "Cybersecurity Threat Detection System",
-    ],
+    "Sustainability & Environment": ["Sustainable Energy Monitoring Platform"],
+    Cybersecurity: ["Cybersecurity Threat Detection System"],
   };
 
   if (loading) {
@@ -63,8 +56,8 @@ const ProblemStatements = () => {
             Problem Statements
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose from a diverse range of problem statements that challenge you to
-            create innovative solutions using cutting-edge technologies.
+            Choose from a diverse range of problem statements that challenge you
+            to create innovative solutions using cutting-edge technologies.
           </p>
         </div>
 
@@ -101,12 +94,10 @@ const ProblemStatements = () => {
             Ready to Choose Your Challenge?
           </h2>
           <p className="text-gray-600 mb-6">
-            Register your team and select the problem statement that excites you most.
+            Register your team and select the problem statement that excites you
+            most.
           </p>
-          <a
-            href="/register"
-            className="btn-primary text-lg px-8 py-3"
-          >
+          <a href="/register" className="btn-primary text-lg px-8 py-3">
             Register Your Team
           </a>
         </div>

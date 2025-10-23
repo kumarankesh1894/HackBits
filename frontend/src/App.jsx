@@ -15,6 +15,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import TeamRegister from "./pages/TeamRegister";
 import TeamDetails from "./pages/TeamDetails";
+import AdminLogin from "./pages/AdminLogin";
+import AdminHome from "./pages/AdminHome";
 import Profile from "./pages/Profile";
 import About from "./pages/About";
 import ProblemStatements from "./pages/ProblemStatements";
@@ -35,6 +37,10 @@ function App() {
               <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+
+              {/* Admin Routes - Not public, only accessible via direct link */}
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin/home" element={<AdminHome />} />
 
               {/* Protected Routes */}
               <Route

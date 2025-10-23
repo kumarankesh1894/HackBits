@@ -158,7 +158,7 @@ const TeamDetails = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700">
-                  Registration Number
+                  Team Number
                 </label>
                 <p className="mt-1 text-lg font-mono text-primary-600">
                   {team.registrationNumber}
@@ -185,14 +185,15 @@ const TeamDetails = () => {
                 </label>
                 <span
                   className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                    team.status === "approved"
+                    team.paymentStatus === "verified"
                       ? "bg-green-100 text-green-800"
-                      : team.status === "rejected"
+                      : team.paymentStatus === "rejected"
                       ? "bg-red-100 text-red-800"
                       : "bg-yellow-100 text-yellow-800"
                   }`}
                 >
-                  {team.status.charAt(0).toUpperCase() + team.status.slice(1)}
+                  {team.paymentStatus.charAt(0).toUpperCase() +
+                    team.paymentStatus.slice(1)}
                 </span>
               </div>
             </div>
