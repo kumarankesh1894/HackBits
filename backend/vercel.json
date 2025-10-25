@@ -9,7 +9,9 @@
           "config/**",
           "routes/**",
           "models/**",
-          "dist/**"
+          "middleware/**",
+          "utils/**",
+          "scripts/**"
         ]
       }
     }
@@ -23,5 +25,13 @@
       "src": "/(.*)",
       "dest": "/server.js"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "server.js": {
+      "maxDuration": 30
+    }
+  }
 }
