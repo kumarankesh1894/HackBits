@@ -95,7 +95,7 @@ hackathon-website/
   password: { type: String, required: true },
 }
 
-👥 Team Schema
+###👥 Team Schema
 {
   teamName: { type: String, required: true },
   leader: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
@@ -104,7 +104,7 @@ hackathon-website/
   createdAt: { type: Date, default: Date.now }
 }
 
-🔗 API Routes
+##🔗 API Routes
 Method	Endpoint	Description
 POST	/api/auth/signup	Register a new user
 POST	/api/auth/login	Login existing user
@@ -112,7 +112,7 @@ GET	/api/users/profile	Get user profile (JWT required)
 PUT	/api/users/profile	Update user profile
 POST	/api/teams/register	Register a team
 GET	/api/teams	Fetch all registered teams
-🔒 Authentication Flow
+##🔒 Authentication Flow
 
 On login/signup, backend returns a JWT token.
 
@@ -122,8 +122,8 @@ Axios interceptors attach the token to every request header.
 
 Backend middleware verifies the token for protected routes.
 
-🎨 Frontend Overview
-📄 Pages
+#🎨 Frontend Overview
+##📄 Pages
 Page	Description
 Login	Authenticate user with email/password
 Signup	Create new account with registration number, email, and password
@@ -131,7 +131,7 @@ Home	Overview of hackathon, problem statements, and sponsors
 Team Registration	Register solo or as a team
 Profile	Edit personal details and logout
 About Us	Information about organizers and event goals
-🧰 Components
+##🧰 Components
 
 Navbar
 
@@ -153,12 +153,12 @@ Profile Form
 
 🖼 Sponsor Section with dynamic logos
 
-⚡ Getting Started
+#⚡ Getting Started
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/hackathon-website.git
 cd hackathon-website
 
-2️⃣ Install Dependencies
+#2️⃣ Install Dependencies
 # Backend
 cd backend
 npm install
